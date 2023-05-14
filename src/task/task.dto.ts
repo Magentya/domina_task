@@ -5,12 +5,18 @@ export class CreateTaskDto {
   id: number;
 
   @ApiProperty()
+  title: string;
+
+  @ApiProperty()
   description: string;
 }
 
 export class UpdateTaskDto {
   @ApiProperty()
   description: string;
+
+  @ApiProperty()
+  title: string;
 
   @ApiProperty()
   completed: boolean;
